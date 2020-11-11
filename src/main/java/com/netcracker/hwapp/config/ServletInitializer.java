@@ -1,0 +1,14 @@
+package com.netcracker.hwapp.config;
+
+import com.netcracker.hwapp.HwappApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+public class ServletInitializer extends SpringBootServletInitializer {
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(HwappApplication.class);
+    }
+
+}
